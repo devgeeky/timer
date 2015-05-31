@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--<Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_marginBottom="98dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />-->
+
+    <Button
+        android:id="@+id/btnStart"
+
+        android:text="Start"
+        android:textColor="#24BA12"
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/buttonshape"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp" />
+
+<!--    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_alignTop="@+id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignBottom="@+id/btnStart" />-->
+
+    <Button
+        android:id="@+id/btnStop"
+
+        android:text="Stop"
+        android:textColor="#ffda0021"
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/buttonshape2"
+        android:layout_alignTop="@+id/btnStart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_alignBottom="@+id/btnStart" />
+
+    <!--<Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_alignTop="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/btnStart" />-->
+
+    <Button
+        android:id="@+id/btnClear"
+
+        android:text="Clear"
+        android:textColor="#ff8e8c8c"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/buttonshape3"
+        android:layout_alignTop="@+id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/btnStart" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/twoPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:layout_alignBottom="@+id/editTextTimeMin"
+        android:layout_toRightOf="@+id/editTextTimeHou"
+        android:layout_toLeftOf="@+id/editTextTimeMin" />
+
+    <TextView
+        android:id="@+id/twoPoints2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:layout_alignBottom="@+id/editTextTimeMin"
+        android:layout_toRightOf="@+id/editTextTimeMin"
+        android:layout_toLeftOf="@+id/editTextTimeSec" />
+    
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="right"
+        android:id="@+id/editTextTimeSec"
+        android:inputType="none"
+        android:selectAllOnFocus="true"
+        android:maxLength="2"
+        android:numeric="integer"
+        android:layout_below="@+id/textViewTime"
+        android:layout_alignLeft="@+id/btnStop"
+        android:layout_alignStart="@+id/btnStop" />
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="right"
+        android:id="@+id/editTextTimeMin"
+        android:inputType="none"
+        android:selectAllOnFocus="true"
+        android:maxLength="2"
+        android:numeric="integer"
+        android:layout_alignTop="@+id/editTextTimeSec"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:gravity="right"
+        android:id="@+id/editTextTimeHou"
+        android:inputType="none"
+        android:selectAllOnFocus="true"
+        android:maxLength="2"
+        android:numeric="integer"
+        android:layout_alignTop="@+id/editTextTimeMin"
+        android:layout_alignRight="@+id/btnStart"
+        android:layout_alignEnd="@+id/btnStart" />
+
+
+</RelativeLayout>
