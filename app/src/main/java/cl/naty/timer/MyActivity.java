@@ -69,17 +69,20 @@ public class MyActivity extends Activity{
                 }
                 else{
                     sec = 0;
+                    editTextTimeSec.setText("0");
                 }
                 if(!editTextTimeMin.getText().toString().equals("")){
                     min = Integer.valueOf(editTextTimeMin.getText().toString());
                 }
                 else{
                     min = 0;
+                    editTextTimeMin.setText("0");
                 }
                 if(!editTextTimeHou.getText().toString().equals(""))
                     hou = Integer.valueOf(editTextTimeHou.getText().toString());
                 else{
                     hou = 0;
+                    editTextTimeHou.setText("0");
                 }
                 totalTime = 1000 * (sec + 60 * (min + 60 * hou));
                 if(sec>=60){
@@ -105,6 +108,15 @@ public class MyActivity extends Activity{
 
             @Override
             public void onClick(View v) {
+                if(editTextTimeSec.getText().toString().equals("")) {
+                    editTextTimeSec.setText("0");
+                }
+                if(editTextTimeMin.getText().toString().equals("")){
+                    editTextTimeMin.setText("0");
+                }
+                if(editTextTimeHou.getText().toString().equals("")){
+                    editTextTimeHou.setText("0");
+                }
                 timer.cancel();
                 itsOn = false;
             }
@@ -114,6 +126,15 @@ public class MyActivity extends Activity{
 
             @Override
             public void onClick(View v) {
+                if(editTextTimeSec.getText().toString().equals("")) {
+                    editTextTimeSec.setText("0");
+                }
+                if(editTextTimeMin.getText().toString().equals("")){
+                    editTextTimeMin.setText("0");
+                }
+                if(editTextTimeHou.getText().toString().equals("")){
+                    editTextTimeHou.setText("0");
+                }
                 String timetext;
                 if(itsOn == true){
                     timer.cancel();
